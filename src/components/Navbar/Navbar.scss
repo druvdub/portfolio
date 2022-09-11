@@ -2,7 +2,7 @@ $border-line-color: rgba(60, 60, 60, 0.12);
 $primary-background: #121314;
 $primary-text: #fffdfa;
 
-// Header
+/* Header */
 
 .navbar {
   display: flex;
@@ -11,9 +11,14 @@ $primary-text: #fffdfa;
   justify-content: space-between;
   box-sizing: border-box;
   padding: 0.5rem 0;
-  margin-top: 0px;
-  height: inherit;
+  margin-top: -73px;
+  top: 0;
+  // height: inherit;
   border-bottom: 1px solid $border-line-color;
+
+  &.active {
+    backdrop-filter: blur(10px);
+  }
 }
 
 .navbar > .nav-container {
@@ -55,7 +60,7 @@ $primary-text: #fffdfa;
 
     .tooltip-text {
       visibility: hidden;
-      width: 120px;
+      width: 2em;
       background-color: black;
       color: #fff;
       text-align: center;
@@ -110,7 +115,7 @@ img {
   margin-bottom: 0.25rem !important;
 }
 
-// Nav
+/* Nav */
 
 .edge-space {
   --edge-x: 3rem;
@@ -128,7 +133,7 @@ img {
   flex-wrap: wrap !important;
 }
 
-// Logo Link
+/* Logo Link */
 
 .navbar-brand {
   font-size: 1.25rem;
@@ -144,7 +149,7 @@ img {
   margin-right: 0 !important;
 }
 
-// Mobile Nav Button
+/* Mobile Nav Button */
 
 .flex {
   display: flex !important;
@@ -174,35 +179,35 @@ button {
   order: 3 !important;
 }
 
-/* .toggle-canvas-backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1040;
-  width: 100vw;
-  height: 100vh;
-  background-color: black;
-  visibility: hidden;
+// .toggle-canvas-backdrop {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   z-index: 1040;
+//   width: 100vw;
+//   height: 100vh;
+//   background-color: black;
+//   visibility: hidden;
 
-  &.show {
-    opacity: 0.5;
-    visibility: visible;
-  }
+//   &.show {
+//     opacity: 0.5;
+//     visibility: visible;
+//   }
 
-  &.fade {
-    opacity: 0;
-  }
-}
+//   &.fade {
+//     opacity: 0;
+//   }
+// }
 
-.fade {
-  transition: opacity 0.15s linear;
-}
+// .fade {
+//   transition: opacity 0.15s linear;
+// }
 
-.mobileicon {
-  transform: translate(-100, 60%);
-} */
+// .mobileicon {
+//   transform: translate(-100, 60%);
+// }
 
-// Mobile Nav Menu
+/* Mobile Nav Menu */
 .toggle-canvas {
   background-color: $primary-text;
   border-left: 0;
@@ -212,7 +217,7 @@ button {
   flex-grow: 1 !important;
 }
 
-// Mobile Nav Menu Header
+/* Mobile Nav Menu Header */
 .padding-edges {
   padding-bottom: 0 !important;
   padding-right: 1.5rem !important;
@@ -288,14 +293,21 @@ dl {
   width: 50%;
 }
 
-// Nav Links
+/* Nav Links */
 .nav-link {
   display: block;
   text-decoration: none;
+  cursor: pointer;
   transition: color 150ms ease-in-out, background-color 150ms ease-in-out,
     border-color 150ms ease-in-out;
 }
 
+.bg-fill {
+  &:hover {
+    color: #d01260;
+    box-shadow: 0 -3px 0 #d01260 inset;
+  }
+}
 .px {
   padding-left: 0 !important;
   padding-right: 0 !important;
@@ -314,7 +326,7 @@ small {
   font-size: 0.875rem;
 }
 
-// Responsive breakpoints
+/* Responsive breakpoints */
 
 @media screen and (min-width: 768px) {
   .flex-wrap {

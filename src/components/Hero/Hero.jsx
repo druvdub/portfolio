@@ -1,10 +1,18 @@
 import React from "react";
 
+import "./Hero.scss";
+
 const Hero = () => {
   return (
-    <div className="container" id="hero" style={{ height: "100vh" }}>
-      Hero
-    </div>
+    <>
+      <div className="container" id="hero">
+        <div className="bg-container"></div>
+        <div className="hero-content">
+          <h1 className="title">Hi, I'm Dhruv</h1>
+          <p className="subtext">I'm a Creative Developer</p>
+        </div>
+      </div>
+    </>
   );
 };
 

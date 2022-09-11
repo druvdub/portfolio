@@ -7,6 +7,9 @@ $primary-background: #fffdfa;
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
 
 :root {
@@ -22,6 +25,7 @@ $primary-background: #fffdfa;
 html,
 body {
   height: 100%;
+  // width: 100%;
 }
 
 body {
