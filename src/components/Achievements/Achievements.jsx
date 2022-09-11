@@ -1,8 +1,9 @@
 import React from "react";
+import "../../common/SectionElements.scss";
 
 const Achievements = () => {
   return (
-    <div className="" id="achievements" style={{ height: "100vh" }}>
+    <div className="section" id="achievements">
       Achievements
     </div>
   );

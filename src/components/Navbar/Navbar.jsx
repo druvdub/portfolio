@@ -95,29 +95,15 @@ const NavBar = () => {
             <div className="toggle-canvas-body padding-points pt-l">
               <hr />
               <ul className="navbar-nav flex-row flex-wrap navbar-style-nav">
-                {/* <li className="nav-item col-6 col-auto bg-fill">
-                  <LinkScroll
-                    to="hero"
-                    smooth={true}
-                    duration={300}
-                    spy={true}
-                    offset={-73}
-                    exact="true"
-                    onClick={toggle}
-                    className="nav-link padding-xy px "
-                    alt="About"
-                  >
-                    About
-                  </LinkScroll>
-                </li> */}
                 <li className="nav-item col-6 col-auto ">
                   <LinkScroll
                     to="experience"
                     smooth={true}
                     duration={300}
                     spy={true}
-                    offset={-73}
+                    offset={-71}
                     exact="true"
+                    isDynamic={true}
                     onClick={toggle}
                     className="nav-link padding-xy px bg-fill"
                     alt="Experience"
@@ -127,12 +113,13 @@ const NavBar = () => {
                 </li>
                 <li className="nav-item col-6 col-auto">
                   <LinkScroll
-                    to="projects"
+                    to="project"
                     smooth={true}
                     duration={300}
                     spy={true}
-                    offset={-73}
+                    offset={-71}
                     exact="true"
+                    isDynamic={true}
                     onClick={toggle}
                     className="nav-link padding-xy px bg-fill"
                     alt="Projects"
@@ -146,11 +133,12 @@ const NavBar = () => {
                     smooth={true}
                     duration={300}
                     spy={true}
-                    offset={-73}
+                    offset={-71}
                     exact="true"
+                    isDynamic={true}
                     onClick={toggle}
                     className="nav-link padding-xy px bg-fill"
-                    alt="Skills"
+                    alt="Achievements"
                   >
                     Achievements
                   </LinkScroll>

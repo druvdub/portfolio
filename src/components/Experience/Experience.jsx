@@ -1,10 +1,13 @@
 import React from "react";
+import "../../common/SectionElements.scss";
 
 const Experience = () => {
   return (
-    <div className="" id="experience" style={{ height: "100vh" }}>
-      Experience
-    </div>
+    <>
+      <div className="section" id="experience">
+        Experience
+      </div>
+    </>
   );
 };
 

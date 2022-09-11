@@ -1,10 +1,13 @@
 import React from "react";
+import "../../common/SectionElements.scss";
 
 const ProjectSection = () => {
   return (
-    <div className="" id="projects" style={{ height: "100vh" }}>
-      ProjectSection
-    </div>
+    <>
+      <div className="section" id="project">
+        ProjectSection
+      </div>
+    </>
   );
 };
 

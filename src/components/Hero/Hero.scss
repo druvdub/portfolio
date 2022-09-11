@@ -5,11 +5,11 @@ $primary-text: #fffdfa;
 /* Hero */
 .container {
   padding: 0 2rem;
-  background-color: #ffa3ca;
+  background-color: #ffafca;
   height: 100%;
 
   min-height: 100vh;
-  min-width: 100vw;
+  // min-width: 100vw;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -23,8 +23,8 @@ $primary-text: #fffdfa;
     right: 0;
     background: linear-gradient(
         180deg,
-        rgba(0, 0, 0, 0.2) 0%,
-        rgba(0, 0, 0, 0.6) 100%
+        rgba($primary-text, 0.2) 0%,
+        rgba($primary-text, 0.6) 100%
       ),
       linear-gradient(180deg, rgba($primary-text, 0.2) 0%, transparent 100%);
     z-index: 11;
@@ -54,20 +54,24 @@ $primary-text: #fffdfa;
   padding: 0.5em 8em;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .title {
   font-size: 80px;
   font-weight: 700;
-  text-align: center;
+  text-align: left;
+
+  span {
+    color: #d01260;
+  }
 }
 
 .subtext {
   //   margin-top: 24px;
   font-size: 40px;
   font-weight: 600;
-  text-align: center;
+  text-align: left;
   max-width: 600px;
 }
 
@@ -80,6 +84,10 @@ $primary-text: #fffdfa;
   .title {
     font-size: 60px;
   }
+
+  .subtext {
+    font-size: 30px;
+  }
 }
 @media screen and (max-width: 480px) {
   .hero-content {
@@ -87,5 +95,9 @@ $primary-text: #fffdfa;
   }
   .title {
     font-size: 42px;
+  }
+
+  .subtext {
+    font-size: 24px;
   }
 }

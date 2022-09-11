@@ -1,5 +1,3 @@
-// import React, { useState } from "react";
-
 import NavBar from "../components/Navbar/Navbar";
 import Hero from "../components/Hero/Hero";
 import Experience from "../components/Experience/Experience";
@@ -7,11 +5,10 @@ import ProjectSection from "../components/ProjectSection/ProjectSection";
 import Achievements from "../components/Achievements/Achievements";
 
 const Home = () => {
-  // const [isToggled, setIsToggled] = useState(false);
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  };
 
-  // const toggle = () => {
-  //   setIsToggled(!isToggled);
-  // };
   return (
     <>
       <NavBar />

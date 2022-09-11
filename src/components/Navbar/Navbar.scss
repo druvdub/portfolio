@@ -1,6 +1,7 @@
 $border-line-color: rgba(60, 60, 60, 0.12);
 $primary-background: #121314;
 $primary-text: #fffdfa;
+$mobile-nav-blur: true;
 
 /* Header */
 
@@ -15,10 +16,6 @@ $primary-text: #fffdfa;
   top: 0;
   // height: inherit;
   border-bottom: 1px solid $border-line-color;
-
-  &.active {
-    backdrop-filter: blur(10px);
-  }
 }
 
 .navbar > .nav-container {
@@ -179,34 +176,6 @@ button {
   order: 3 !important;
 }
 
-// .toggle-canvas-backdrop {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   z-index: 1040;
-//   width: 100vw;
-//   height: 100vh;
-//   background-color: black;
-//   visibility: hidden;
-
-//   &.show {
-//     opacity: 0.5;
-//     visibility: visible;
-//   }
-
-//   &.fade {
-//     opacity: 0;
-//   }
-// }
-
-// .fade {
-//   transition: opacity 0.15s linear;
-// }
-
-// .mobileicon {
-//   transform: translate(-100, 60%);
-// }
-
 /* Mobile Nav Menu */
 .toggle-canvas {
   background-color: $primary-text;
@@ -305,9 +274,14 @@ dl {
 .bg-fill {
   &:hover {
     color: #d01260;
-    box-shadow: 0 -3px 0 #d01260 inset;
+    border-bottom: solid 1px #d01260;
+  }
+
+  &.active {
+    color: #d01260;
   }
 }
+
 .px {
   padding-left: 0 !important;
   padding-right: 0 !important;
@@ -336,6 +310,10 @@ small {
   .navbar {
     flex-wrap: nowrap;
     justify-content: space-evenly;
+
+    &.active {
+      backdrop-filter: blur(10px);
+    }
 
     .navbar-nav {
       flex-direction: row;
@@ -383,10 +361,6 @@ small {
     width: auto;
   }
 
-  .margin-auto {
-    // margin-left: auto !important;
-  }
-
   .navbar-style-nav {
     margin-right: auto !important;
     margin-left: auto;
@@ -406,11 +380,15 @@ small {
       visibility: visible;
     }
   }
+
+  .bg-fill.active {
+    border-bottom: solid 1px #d01260;
+  }
 }
 
 @media screen and (max-width: 767.98px) {
   .navbar {
-    transition: 800ms all ease;
+    transition: 500ms all ease;
   }
 
   .toggle-canvas.toggle-canvas-end {
@@ -429,6 +407,7 @@ small {
     display: flex;
     flex-direction: column;
     max-width: 100%;
+    height: 100%;
     color: $primary-background;
     visibility: hidden;
     background-clip: padding-box;
@@ -438,6 +417,11 @@ small {
     &.show {
       visibility: visible;
       transform: translateX(0);
+      $mobile-nav-blur: false;
+    }
+
+    &:not(.show) {
+      $mobile-nav-blur: true;
     }
   }
 
