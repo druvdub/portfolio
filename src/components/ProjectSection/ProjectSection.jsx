@@ -1,11 +1,11 @@
 import React from "react";
-import "../../common/SectionElements.scss";
+import "../../common/_sectionElements.scss";
 
 const ProjectSection = () => {
   return (
     <>
       <div className="section" id="project">
-        ProjectSection
+        <div className="projects">PROJECTS</div>
       </div>
     </>
   );

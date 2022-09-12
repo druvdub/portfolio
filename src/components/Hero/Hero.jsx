@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./Hero.scss";
+import "./_hero.scss";
 
 const Hero = () => {
   return (

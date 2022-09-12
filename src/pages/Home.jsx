@@ -3,6 +3,7 @@ import Hero from "../components/Hero/Hero";
 import Experience from "../components/Experience/Experience";
 import ProjectSection from "../components/ProjectSection/ProjectSection";
 import Achievements from "../components/Achievements/Achievements";
+import Footer from "../components/Footer/Footer";
 
 const Home = () => {
   window.onbeforeunload = function () {
@@ -16,6 +17,7 @@ const Home = () => {
       <Experience />
       <ProjectSection />
       <Achievements />
+      <Footer />
     </>
   );
 };

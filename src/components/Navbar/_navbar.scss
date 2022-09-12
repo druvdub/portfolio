@@ -1,7 +1,8 @@
+@use "../../common/config";
+
+/* Colors */
+
 $border-line-color: rgba(60, 60, 60, 0.12);
-$primary-background: #121314;
-$primary-text: #fffdfa;
-$mobile-nav-blur: true;
 
 /* Header */
 
@@ -48,7 +49,7 @@ $mobile-nav-blur: true;
   }
 
   .nav-link {
-    color: rgba($primary-background, 0.85);
+    color: rgba(config.$primary-text, 0.85);
   }
 
   .nav-svg {
@@ -58,8 +59,8 @@ $mobile-nav-blur: true;
     .tooltip-text {
       visibility: hidden;
       width: 2em;
-      background-color: black;
-      color: #fff;
+      background-color: config.$primary-bg;
+      color: config.$primary-text;
       text-align: center;
       border-radius: 6px;
       padding: 5px 0;
@@ -83,8 +84,8 @@ $mobile-nav-blur: true;
     visibility: hidden;
     font-size: 0.5rem;
     width: 60px;
-    background-color: rgba($primary-background, 0.85);
-    color: $primary-text;
+    background-color: rgba(config.$primary-bg, 0.85);
+    color: config.$primary-text;
     text-align: center;
     border-radius: 0.25rem;
     padding: 0.5em;
@@ -178,7 +179,7 @@ button {
 
 /* Mobile Nav Menu */
 .toggle-canvas {
-  background-color: $primary-text;
+  background-color: config.$primary-bg;
   border-left: 0;
 }
 
@@ -215,7 +216,7 @@ button {
   box-sizing: content-box;
   width: 1em;
   height: 1em;
-  color: black;
+  color: config.$primary-text;
   background: transparent center/1em auto no-repeat;
   font-size: 1.25rem;
   border: 0;
@@ -237,7 +238,7 @@ hr {
   border: 0;
   border-top: 1px solid;
   opacity: 0.25;
-  color: rgba($primary-background, 0.5) !important;
+  color: rgba(config.$primary-text, 0.5) !important;
 }
 
 .navbar-nav {
@@ -272,13 +273,15 @@ dl {
 }
 
 .bg-fill {
+  border-bottom: solid 0.125rem transparent;
+
   &:hover {
-    color: #d01260;
-    border-bottom: solid 1px #d01260;
+    color: config.$accent-5;
+    border-bottom: solid 0.125rem config.$accent-5;
   }
 
   &.active {
-    color: #d01260;
+    color: config.$accent-5;
   }
 }
 
@@ -298,6 +301,18 @@ dl {
 
 small {
   font-size: 0.875rem;
+}
+
+.github:hover {
+  color: config.$accent-1;
+}
+
+.linkedin:hover {
+  color: config.$accent-6;
+}
+
+.cv:hover {
+  color: config.$vibrant-2;
 }
 
 /* Responsive breakpoints */
@@ -382,20 +397,24 @@ small {
   }
 
   .bg-fill.active {
-    border-bottom: solid 1px #d01260;
+    border-bottom: solid 0.125rem config.$accent-5;
   }
 }
 
 @media screen and (max-width: 767.98px) {
   .navbar {
     transition: 500ms all ease;
+
+    &.active {
+      background-color: config.$primary-bg;
+    }
   }
 
   .toggle-canvas.toggle-canvas-end {
     top: 0;
     right: 0;
     width: 100%;
-    background: $primary-text;
+    background: config.$primary-bg;
     transform: translateX(100%);
     // clip-path: inset(0);
   }
@@ -408,7 +427,7 @@ small {
     flex-direction: column;
     max-width: 100%;
     height: 100%;
-    color: $primary-background;
+    color: config.$primary-text;
     visibility: hidden;
     background-clip: padding-box;
     outline: 0;
@@ -417,17 +436,12 @@ small {
     &.show {
       visibility: visible;
       transform: translateX(0);
-      $mobile-nav-blur: false;
-    }
-
-    &:not(.show) {
-      $mobile-nav-blur: true;
     }
   }
 
   .nav-style {
     .toggle-canvas {
-      box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%);
+      box-shadow: 0 1rem 3rem rgb(0 0 0/ 18%);
     }
   }
 }

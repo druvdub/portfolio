@@ -1,0 +1,31 @@
+$primary-bg: #fffdfa;
+$primary-text: #121314;
+
+/* Accent Colors */
+
+$vibrant-1: #f64c72;
+$vibrant-2: #950740;
+$vibrant-3: #c3073f;
+
+$accent-1: #e27d60;
+$accent-2: #85dcb0;
+$accent-3: #e8a87c;
+$accent-4: #c38d9e;
+$accent-5: #41b3a3;
+$accent-6: #0a66c2;
+$accent-7: #5cdb95;
+
+:root {
+  --ds-text-color: $primary-text;
+  --ds-bg-color: $primary-bg;
+  --ds-vibrant-1: $vibrant-1;
+  --ds-vibrant-2: $vibrant-2;
+  --ds-vibrant-3: $vibrant-3;
+  --ds-accent-1: $accent-1;
+  --ds-accent-2: $accent-2;
+  --ds-accent-3: $accent-3;
+  --ds-accent-4: $accent-4;
+  --ds-accent-5: $accent-5;
+  --ds-accent-6: $accent-6;
+  --ds-accent-7: $accent-7;
+}

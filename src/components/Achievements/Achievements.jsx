@@ -1,11 +1,13 @@
 import React from "react";
-import "../../common/SectionElements.scss";
+import "../../common/_sectionElements.scss";
 
 const Achievements = () => {
   return (
-    <div className="section" id="achievements">
-      Achievements
-    </div>
+    <>
+      <div className="section ach" id="achievements">
+        <div className="achievements">ACHIEVEMENTS</div>
+      </div>
+    </>
   );
 };
 

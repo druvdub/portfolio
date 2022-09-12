@@ -1,0 +1,67 @@
+import {
+  SiAngular,
+  SiCss3,
+  SiExpress,
+  SiHtml5,
+  SiJavascript,
+  SiMysql,
+  SiNodedotjs,
+  SiPhp,
+  SiPython,
+  SiSequelize,
+  SiTypescript,
+} from "react-icons/si";
+
+export const postDesc1 = {
+  companyLogo: require("../../images/ey.svg").default,
+  companySubline: "ernst & young",
+  companyLink: "https://www.ey.com/en_in",
+  postDuration: "July 2022 - September 2022",
+  positionTitle: "SDE Summer Intern",
+  workDescription: {
+    1: "Developed and deployed a MVC web application to extract and display data with Authentication and Authorization system",
+    2: "Scraped structured data from PDFs and stored in a MySQL database through Sequelize ORM and rendered UI components using Angular",
+    3: "Built a CORS (Cross-Origin Resource Sharing) enabled REST API to handle resource requests with Node.js and Express and ",
+  },
+  techStack: [
+    <SiMysql />,
+    " ",
+    <SiExpress />,
+    " ",
+    <SiAngular />,
+    " ",
+    <SiNodedotjs />,
+    " ",
+    <SiPython />,
+    " ",
+    <SiSequelize />,
+    " ",
+    <SiTypescript />,
+    " ",
+    <SiJavascript />,
+    " ",
+  ],
+};
+
+export const postDesc2 = {
+  companyLogo: require("../../images/imago-logo.png"),
+  companySubline: "imago",
+  companyLink: "https://imago.cs.manchester.ac.uk/",
+  postDuration: "Jan 2022 - May 2022",
+  positionTitle: "Software Development Intern",
+  workDescription: {
+    1: "Developed a membership application in a team of 4 for an up-and-coming organisation, A4AI to lay the foundations of their national expansion plan using HTML, CSS3, JavaScript and PHP",
+    2: "Designed interactive UI and mockups and presented to client for verification and changes using Figma",
+    3: " Organised weekly backlog refinement meetings to ensure the delivery of features such as event management tools, social media functionalities and payment processing within the project time-frame",
+  },
+  techStack: [
+    <SiHtml5 />,
+    " ",
+    <SiCss3 />,
+    " ",
+    <SiJavascript />,
+    " ",
+    <SiPhp />,
+    " ",
+  ],
+};

@@ -5,7 +5,7 @@ import { IoClose } from "react-icons/io5";
 import { Link as LinkScroll, animateScroll as scroll } from "react-scroll";
 
 import Logo from "../../images/logo.svg";
-import "./Navbar.scss";
+import "./_navbar.scss";
 
 const NavBar = () => {
   const [scrollNav, setScrollNav] = useState(false);
@@ -17,7 +17,7 @@ const NavBar = () => {
 
   // change navbar on scroll
   const changeScroll = () => {
-    if (window.scrollY >= 73) {
+    if (window.scrollY >= 71) {
       setScrollNav(true);
     } else {
       setScrollNav(false);
@@ -148,7 +148,7 @@ const NavBar = () => {
               <ul className="navbar-nav flex-row flex-wrap margin-auto">
                 <li className="nav-item col-6 col-auto">
                   <a
-                    className="nav-link padding-xy px"
+                    className="nav-link padding-xy px github"
                     href="https://github.com/druvdub"
                     target={"_blank"}
                     alt="GitHub"
@@ -160,7 +160,7 @@ const NavBar = () => {
                 </li>
                 <li className="nav-item col-6 col-auto">
                   <a
-                    className="nav-link padding-xy px"
+                    className="nav-link padding-xy px linkedin"
                     href="https://www.linkedin.com/in/dsio"
                     target={"_blank"}
                     alt="Linkedin"
@@ -172,7 +172,7 @@ const NavBar = () => {
                 </li>
                 <li className="nav-item col-6 col-auto">
                   <a
-                    className="nav-link padding-xy px"
+                    className="nav-link padding-xy px cv"
                     href="/"
                     target={"_blank"}
                     alt="Linkedin"

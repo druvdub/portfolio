@@ -1,0 +1,118 @@
+@use "./config";
+
+.section {
+  padding: 0 2vw;
+  background-color: config.$primary-bg;
+  height: 100%;
+  min-height: 800px;
+  // min-height: 100vh;
+  // min-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: auto;
+
+  &.exp,
+  &.ach {
+    background-color: config.$primary-bg;
+  }
+
+  .topline {
+    align-items: flex-start;
+  }
+}
+
+.section-content {
+  z-index: 13;
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+  list-style-type: none;
+  padding: 0.5em 8em;
+  // margin: 0 auto;
+  display: grid;
+  // grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 4rem 5vw;
+  // margin-top: -5rem;
+  justify-items: center;
+}
+
+.work,
+.projects,
+.achievements {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow-x: hidden;
+  -o-object-fit: cover;
+  object-fit: cover;
+  color: rgba(config.$accent-5, 0.55);
+  font-size: 200px;
+  font-weight: 500;
+  letter-spacing: -1rem;
+}
+
+.topline {
+  // margin-left: -850px;
+  color: #ff4d00;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 1.4px;
+  margin-bottom: 16px;
+  @media screen and (max-width: 1000px) {
+    margin-left: 0;
+  }
+}
+
+/* Responsive Breakpoints */
+
+@media screen and (max-width: 1000px) {
+  .section-content {
+    padding: 0 1.25rem;
+    margin: 4rem 5vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    max-height: 1100px;
+    height: auto;
+  }
+
+  .section-content {
+    padding: 0 1.25rem;
+    margin: 4rem 5vw;
+  }
+
+  .work,
+  .projects,
+  .achievements {
+    font-size: 100px;
+    letter-spacing: -0.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section {
+    height: 1300px;
+    height: auto;
+  }
+
+  .work,
+  .projects,
+  .achievements {
+    font-size: 80px;
+    letter-spacing: -0.125rem;
+  }
+}
