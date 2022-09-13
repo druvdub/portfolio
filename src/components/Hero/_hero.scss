@@ -37,6 +37,52 @@ $border-line-color: rgba(60, 60, 60, 0.12);
 
 /* Hero Background */
 
+.circle {
+  display: flex;
+  // position: absolute;
+  background: transparent;
+  border: 20vh solid transparent;
+  border-radius: 50%;
+  // box-shadow: 0.375em 0.375em 0 0 rgba(15, 28, 63, 0.125);
+  height: 100vw;
+  width: 100vw;
+  // margin: -50vw -50vw 0 0;
+  z-index: 1;
+  justify-content: center;
+  position: absolute;
+
+  animation-name: backgroundColorPalette;
+  animation-duration: 15000ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+  &.two {
+    height: 80vw;
+    width: 80vw;
+    z-index: 2;
+    border-width: 20vh;
+    animation-direction: alternate-reverse;
+  }
+}
+
+@keyframes backgroundColorPalette {
+  0% {
+    border-color: rgba(#cbc5ea, 0.85);
+  }
+  25% {
+    border-color: rgba(config.$accent-2, 0.85);
+  }
+  50% {
+    border-color: rgba(config.$vibrant-1, 0.85);
+  }
+  75% {
+    border-color: rgba(#c09bd8, 0.85);
+  }
+  100% {
+    border-color: rgba(#13505b, 0.85);
+  }
+}
+
 .bg-container {
   position: absolute;
   top: 0;
@@ -45,9 +91,20 @@ $border-line-color: rgba(60, 60, 60, 0.12);
   left: 0;
   width: 100%;
   height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
   overflow: hidden;
-  //   -o-object-fit: cover;
-  //   object-fit: cover;
+  -o-object-fit: cover;
+  object-fit: cover;
+
+  .circle {
+    margin-top: -50vh;
+
+    &.two {
+      margin-top: -50vh;
+    }
+  }
 }
 
 /* Hero Content */

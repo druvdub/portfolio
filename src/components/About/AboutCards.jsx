@@ -169,7 +169,9 @@ const AboutCards = ({ bool }) => {
   return (
     <>
       <div className="card about-card">
-        <div className="header"></div>
+        <div className="header">
+          {bool ? <h2 className="card-title">a little about me...</h2> : ""}
+        </div>
         <div className="body fle-g">
           {bool ? cardDesc : <img src={cardImg} alt="about" />}
         </div>

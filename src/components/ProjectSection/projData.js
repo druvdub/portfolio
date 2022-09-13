@@ -25,7 +25,7 @@ export const proj1 = {
     "A simple responsive portfolio website built using React.js and Sass",
   cardSource: "https://github.com/druvdub/portfolio",
   cardBoolean: true,
-  cardDemo: "kdssjdk",
+  cardDemo: "https://dhruv-sharma.vercel.app/",
   techStack: [
     <SiHtml5 />,
     " ",

@@ -10,7 +10,6 @@ import {
   SiPython,
   SiSequelize,
   SiTypescript,
-  SiBootstrap,
 } from "react-icons/si";
 
 export const postDesc1 = {
@@ -40,8 +39,6 @@ export const postDesc1 = {
     <SiTypescript />,
     " ",
     <SiJavascript />,
-    " ",
-    <SiBootstrap />,
   ],
 };
 
@@ -64,6 +61,5 @@ export const postDesc2 = {
     <SiJavascript />,
     " ",
     <SiPhp />,
-    " ",
   ],
 };

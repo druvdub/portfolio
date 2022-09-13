@@ -6,7 +6,10 @@ const Hero = () => {
   return (
     <>
       <div className="container" id="hero">
-        <div className="bg-container"></div>
+        <div className="bg-container">
+          <div className="circle"></div>
+          <div className="circle two"></div>
+        </div>
         <div className="hero-content">
           <h1 className="title">
             Hi, I'm <span>Dhruv</span>
