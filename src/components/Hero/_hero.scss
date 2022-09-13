@@ -60,7 +60,6 @@ $border-line-color: rgba(60, 60, 60, 0.12);
     height: 80vw;
     width: 80vw;
     z-index: 2;
-    border-width: 20vh;
     animation-direction: alternate-reverse;
   }
 }
@@ -160,5 +159,16 @@ $border-line-color: rgba(60, 60, 60, 0.12);
 
   .subtext {
     font-size: 24px;
+  }
+
+  .circle {
+    height: 80vh;
+    width: 80vh;
+    border-width: 30vw;
+
+    &.two {
+      height: 60vh;
+      width: 60vh;
+    }
   }
 }
