@@ -11,3 +11,27 @@ $border-line-color: rgba(60, 60, 60, 0.12);
   background-color: config.$primary-text;
   color: config.$primary-bg;
 }
+
+.page-footer > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page-footer > span > a {
+  vertical-align: middle !important;
+  color: config.$primary-bg;
+}
+
+.footer-link {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  margin-top: 0;
+  margin-bottom: -0.25em;
+
+  @media screen and (max-width: 768px) {
+    padding: 0 0.5rem !important;
+  }
+}

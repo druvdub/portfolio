@@ -173,9 +173,9 @@ const NavBar = () => {
                 <li className="nav-item col-6 col-auto">
                   <a
                     className="nav-link padding-xy px cv"
-                    href="/"
+                    href="https://drive.google.com/file/d/1JF7Q7uZJ1rKZvCKmM3SV8jRILDRTQYR6/view?usp=sharing"
                     target={"_blank"}
-                    alt="Linkedin"
+                    alt="Resume"
                     rel="noreferrer"
                   >
                     <FaFileExport className="nav-svg" />{" "}

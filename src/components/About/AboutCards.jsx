@@ -87,6 +87,7 @@ const AboutCards = ({ bool }) => {
 
   const cardDesc = (
     <>
+      <hr className="card-hr-abt" />
       <p>
         Currently, an undergraduate studying Computer Science with Artificial
         Intelligence at{" "}
