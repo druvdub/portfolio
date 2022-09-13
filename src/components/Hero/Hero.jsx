@@ -5,7 +5,7 @@ import "./_hero.scss";
 const Hero = () => {
   return (
     <>
-      <div className="container" id="hero">
+      <div className="container he" id="hero">
         <div className="bg-container">
           <div className="circle"></div>
           <div className="circle two"></div>
