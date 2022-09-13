@@ -1,0 +1,64 @@
+@use "../../common/config";
+
+.card-project {
+  display: flex;
+  flex-grow: 1;
+  border-color: rgba(config.$accent-1, 0.2);
+}
+
+.padding-b {
+  padding-bottom: 0.2rem;
+  margin-bottom: 0.1rem;
+}
+
+.project-card {
+  min-height: 50px;
+  width: 100%;
+}
+
+.card-links {
+  flex-direction: column;
+  // justify-content: flex-start;
+  // align-items: flex-start;
+}
+
+.card-href {
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0 0.5rem;
+  vertical-align: middle;
+  color: rgba(config.$primary-text, 0.39);
+
+  &:hover {
+    color: config.$accent-1;
+  }
+}
+
+.float-left {
+  flex-direction: row;
+}
+
+.float-left > p > span {
+  font-size: 1rem;
+}
+
+.float-left > p {
+  &:hover {
+    color: config.$accent-1;
+  }
+}
+
+.source-demo {
+  display: inherit;
+  flex-direction: row;
+  justify-content: end !important;
+}
+
+.pro-color {
+  border-color: config.$accent-1;
+}
+
+.fle-g {
+  flex-grow: 1 !important;
+  min-height: 150px;
+}

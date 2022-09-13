@@ -7,15 +7,13 @@
   // box-shadow: 1.2em 1.2em 2em rgba(config.$primary-text, 0.39);
   // -0.25rem -0.25rem 0.5rem rgba(config.$primary-bg, 0.39);
   //   border-radius: 12px;
-  border: 1px solid rgba(209, 213, 219, 0.3);
+  border: 1px solid rgba(config.$vibrant-2, 0.2);
   width: 100%;
   min-width: auto;
-  max-width: 600px;
+  max-width: 800px;
   padding: 0.5rem 1.5rem;
   margin: 0;
-  position: relative;
   //   flex-grow: 1;
-  //   display: block;
   flex-direction: column;
   height: 100%;
   //   min-height: 400px;
@@ -34,6 +32,7 @@
   display: inherit;
   flex-flow: column;
   flex-grow: 1;
+  text-align: justify;
 }
 
 .footer {
@@ -49,8 +48,12 @@
 }
 
 .tech-stack > p {
-  color: config.$vibrant-2;
+  color: rgba(config.$primary-text, 0.89);
   font-weight: bold;
+  &:hover {
+    color: config.$vibrant-2;
+    cursor: default;
+  }
 }
 
 .company {
@@ -77,9 +80,6 @@
   margin-bottom: 0.5rem;
 }
 
-.card-title {
-}
-
 .card-link {
   text-decoration: none;
   cursor: pointer;
@@ -92,6 +92,7 @@
 
 .card-hr {
   display: block !important;
+  border-color: config.$vibrant-2;
 }
 
 .tiny-text {

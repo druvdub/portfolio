@@ -1,6 +1,5 @@
 import React from "react";
 import "./_expCard.scss";
-import "react-icons";
 
 const ExpCard = ({
   companyLogo,
@@ -17,7 +16,13 @@ const ExpCard = ({
         <div className="header">
           <div className="company">
             <img src={companyLogo} alt={companySubline} />
-            <a className="card-link" href={companyLink} alt={companySubline}>
+            <a
+              className="card-link"
+              href={companyLink}
+              alt={companySubline}
+              target={"_blank"}
+              rel="noreferrer"
+            >
               @{companySubline}
             </a>
           </div>
