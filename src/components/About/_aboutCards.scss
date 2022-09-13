@@ -1,0 +1,45 @@
+@use "../../common/config";
+
+.about-card {
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+  border: none;
+}
+
+.about-info {
+  text-decoration: none;
+  color: config.$vibrant-3;
+}
+
+.py {
+  color: config.$accent-6;
+}
+
+.card-hr-abt {
+  display: block !important;
+  color: config.$primary-text;
+}
+
+.b > p > span {
+  padding-left: 0;
+  font-size: 1.5em;
+  color: rgba(config.$primary-text, 0.85);
+}
+
+.b > p:hover {
+  color: config.$primary-text;
+}
+
+.b > p > a.contact-mail {
+  padding-left: 0.2em;
+  text-decoration: none;
+  font-weight: 400;
+  // font-size: medium;
+  color: config.$accent-5;
+}
+
+.b > p {
+  align-items: center;
+  vertical-align: middle;
+}

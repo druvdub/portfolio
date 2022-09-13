@@ -68,8 +68,8 @@ export const proj3 = {
   cardDescription:
     "A real-time object recognition web application built using React.js. The application currently uses a Single Shot Detector (SSD) model trained on COCO, an open-source a large-scale object detection, segmentation, and captioning dataset to detect objects utilizing tensorflow. A custom model is currently being trained using Azure AI Vision to improve accuracy in medicine recognition.",
   cardSource: "https://github.com/druvdub/real-time-object-detection",
-  cardBoolean: false,
-  cardDemo: "board-itx.herokuapp.com/",
+  cardBoolean: true,
+  cardDemo: "https://druvdub.github.io/real-time-object-detection/",
   techStack: [
     <SiHtml5 />,
     " ",

@@ -10,6 +10,7 @@ import {
   SiPython,
   SiSequelize,
   SiTypescript,
+  SiBootstrap,
 } from "react-icons/si";
 
 export const postDesc1 = {
@@ -20,12 +21,10 @@ export const postDesc1 = {
   positionTitle: "SDE Summer Intern",
   workDescription: {
     1: "Developed and deployed a MVC web application to extract and display data with Authentication and Authorization system",
-    2: "Scraped structured data from PDFs and stored in a MySQL database through Sequelize ORM and rendered UI components using Angular",
-    3: "Built a CORS (Cross-Origin Resource Sharing) enabled REST API to handle resource requests with Node.js and Express and ",
+    2: "Scraped structured data from PDFs and stored in a MySQL database through Sequelize ORM and rendered UI components using Angular and built a CORS (Cross-Origin Resource Sharing) enabled REST API to handle resource requests with Node.js and Express",
+    3: "Developed a price estimation prediction model using Scikit library and Python",
   },
   techStack: [
-    <SiMysql />,
-    " ",
     <SiExpress />,
     " ",
     <SiAngular />,
@@ -34,12 +33,15 @@ export const postDesc1 = {
     " ",
     <SiPython />,
     " ",
+    <SiMysql />,
+    " ",
     <SiSequelize />,
     " ",
     <SiTypescript />,
     " ",
     <SiJavascript />,
     " ",
+    <SiBootstrap />,
   ],
 };
 

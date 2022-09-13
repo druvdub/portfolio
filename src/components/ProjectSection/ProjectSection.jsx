@@ -21,10 +21,10 @@ const ProjectSection = () => {
             <ProCard {...proj4} />
           </li>
           <li>
-            <ProCard {...proj1} />
+            <ProCard {...proj2} />
           </li>
           <li>
-            <ProCard {...proj2} />
+            <ProCard {...proj1} />
           </li>
           <li>
             <ProCard {...proj5} />

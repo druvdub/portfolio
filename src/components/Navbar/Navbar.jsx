@@ -95,6 +95,22 @@ const NavBar = () => {
             <div className="toggle-canvas-body padding-points pt-l">
               <hr />
               <ul className="navbar-nav flex-row flex-wrap navbar-style-nav">
+                <li className="nav-item col-6 col-auto">
+                  <LinkScroll
+                    to="about"
+                    smooth={true}
+                    duration={300}
+                    spy={true}
+                    offset={-71}
+                    exact="true"
+                    isDynamic={true}
+                    onClick={toggle}
+                    className="nav-link padding-xy px bg-fill"
+                    alt="About"
+                  >
+                    About
+                  </LinkScroll>
+                </li>
                 <li className="nav-item col-6 col-auto ">
                   <LinkScroll
                     to="experience"
@@ -125,22 +141,6 @@ const NavBar = () => {
                     alt="Projects"
                   >
                     Projects
-                  </LinkScroll>
-                </li>
-                <li className="nav-item col-6 col-auto">
-                  <LinkScroll
-                    to="achievements"
-                    smooth={true}
-                    duration={300}
-                    spy={true}
-                    offset={-71}
-                    exact="true"
-                    isDynamic={true}
-                    onClick={toggle}
-                    className="nav-link padding-xy px bg-fill"
-                    alt="Achievements"
-                  >
-                    Achievements
                   </LinkScroll>
                 </li>
               </ul>
