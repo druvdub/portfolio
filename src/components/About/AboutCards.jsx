@@ -185,12 +185,12 @@ const AboutCards = ({ bool }) => {
                   Contact:{" "}
                   <a
                     className="contact-mail"
-                    href="mailto: para_d0x9112@outlook.com"
+                    href="mailto: dhruvsharma.091t@gmail.com"
                     target={"_blank"}
                     alt="email"
                     rel="noreferrer"
                   >
-                    para_d0x9112@outlook.com
+                    dhruvsharma.091t@gmail.com
                   </a>
                 </p>
               </div>
