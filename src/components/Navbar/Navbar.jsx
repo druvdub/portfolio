@@ -173,7 +173,7 @@ const NavBar = () => {
                 <li className="nav-item col-6 col-auto">
                   <a
                     className="nav-link padding-xy px cv"
-                    href="https://drive.google.com/file/d/1dBdiZY_jT6HEN4Fsmn2RCZNWG3qwW4kr/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1NKkKDFKBRwsIUXweEPndbBeJNHwH_OER/view?usp=sharing"
                     target={"_blank"}
                     alt="Resume"
                     rel="noreferrer"

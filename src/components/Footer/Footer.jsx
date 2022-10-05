@@ -31,7 +31,7 @@ const Footer = () => {
           </a>
           <a
             className="nav-link padding-xy px cv footer-link"
-            href="https://drive.google.com/file/d/1dBdiZY_jT6HEN4Fsmn2RCZNWG3qwW4kr/view?usp=sharing"
+            href="https://drive.google.com/file/d/1NKkKDFKBRwsIUXweEPndbBeJNHwH_OER/view?usp=sharing"
             target={"_blank"}
             alt="Resume"
             rel="noreferrer"
