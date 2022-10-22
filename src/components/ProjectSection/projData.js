@@ -45,7 +45,7 @@ export const proj2 = {
     "A Kanban-style application built for managing project tasks in lists. The frontend was built using the Angular Framework and the backend was built using Express.js, Node.js, Sequelize ORM and MySQL. The website has been deployed on Heroku and the database was migrated to PostgreSQL",
   cardSource: "https://github.com/druvdub/Board-it",
   cardBoolean: true,
-  cardDemo: "board-itx.herokuapp.com/",
+  cardDemo: "https://board-itx.herokuapp.com/",
   techStack: [
     <SiExpress />,
     " ",
